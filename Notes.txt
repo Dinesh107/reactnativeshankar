@@ -1,0 +1,34 @@
+Course Roadmap - Web Based Project 
+
+JavaScript - ES6 - ECMA Script - Advanced Js.
+
+React Js 
+
+Angular Js
+
+Vue Js 
+
+Next js
+
+Desktop view, Mobile View, Tab view
+
+Frontend end(Client Side) (React native)
+
+Backend end(Server side) (Node js - run environment, Express js)
+
+Database Management(relation and non relational) (mongo db)
+
+Mini project + main project - for student Project
+
+JavaScript
+
+
+
+
+
+
+
+
+
+
+
