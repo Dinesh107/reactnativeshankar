@@ -326,3 +326,149 @@
 //         console.log("Invalid day");
 // }
 
+
+// string methods :- allow us to manipultate and work with text (strings)
+
+// let userName = "ShankarStudent";
+
+// console.log(userName.charAt(4));
+// console.log(userName.indexOf("n"));
+// console.log(userName.lastIndexOf("n"));
+// console.log(userName.length);
+
+// console.log(userName);
+// console.log(userName.trim());
+
+// console.log(userName.toUpperCase());
+// console.log(userName.toLowerCase());
+
+// console.log(userName.repeat(3));
+
+// let result1 = userName.startsWith(" ");
+
+// console.log(result1);
+
+// if(result1) {
+//     console.log("Username starts with a space");
+// } else {
+//     console.log("Username does not start with a space");
+//     console.log(userName);
+    
+// }
+// let result2 = userName.endsWith(" ");
+
+// console.log(result2);
+
+// if(result2) {
+//     console.log("Username ends with a space");
+// } else {
+//     console.log("Username does not ends with a space");
+//     console.log(userName);
+    
+// }
+
+// let result3 = userName.includes(" ");
+
+// console.log(result3);
+
+// if(result3) {
+//     console.log("Username can't include a ' '");
+// } else {
+//     console.log(userName);
+// // }
+
+
+// let phoneNumber = "123-456-7890";
+
+// phoneNumber = phoneNumber.replaceAll("-", "/");
+
+// console.log(phoneNumber);
+
+// phoneNumber = phoneNumber.padStart(20, "0");
+
+// console.log(phoneNumber);
+
+// phoneNumber = phoneNumber.padEnd(15, "0");
+
+// console.log(phoneNumber);
+
+// string slicing = creating a substring from a protion of another string 
+
+// string.slice(start, end)
+
+// const fullName = "Balaji Student";
+
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
+// console.log(firstName);
+
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+// console.log(lastName);
+
+
+// slice - create a substring from a portion of another string
+
+// let firstName = fullName.slice(0, 7);
+// let lastName = fullName.slice(8);
+
+// let firstChar = firstName.slice(0, 1);
+// let lastChar = firstName.slice(-4);
+
+// console.log(firstName);
+// console.log(lastName);
+// console.log(firstChar);
+// console.log(lastChar);
+
+// const email = "shankar@gmail.com";
+
+// let userName = email.slice(0, email.indexOf("@"));
+// let extension = email.slice(email.indexOf("@") + 1);
+
+// console.log(userName);
+
+// console.log(extension);
+
+
+// method chaining - calling one method after another - in one continous line of code
+
+// no method chaining
+
+// let username = window.prompt("Enter your username"); 
+
+// username = username.trim();
+
+// let letter = username.charAt(0);
+
+// letter = letter.toUpperCase();
+
+// let extraChars = username.slice(1);
+// extraChars = extraChars.toLowerCase();
+
+// username = letter + extraChars;
+
+// console.log(username);
+
+
+// method chaining 
+
+let username = window.prompt("Enter your username"); 
+
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+
+console.log(username);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
