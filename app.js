@@ -8,15 +8,13 @@
 // document.getElementById("myH1").textContent = "Welcome to js";
 // document.getElementById("myP").textContent = "React and i like food";
 
-
 // variables - a container taht stores a value, behaves as if it were the value it contains.
 
 // 1) declare let x;
 // 2) x = 10;
 // 3) let x = 10;
 
-
-// let age = 25; 
+// let age = 25;
 
 // let price = 99.22;
 
@@ -40,10 +38,9 @@
 // document.getElementById("p3").textContent = `isOnline: ${isOnline}`
 // template literals
 
+// + - / * %
 
-// + - / * % 
-
-// let students = 29; 
+// let students = 29;
 
 // students = students + 1;
 // students += 1;
@@ -57,8 +54,7 @@
 
 // console.log(students);
 
-// let var const 
-
+// let var const
 
 //user Input
 
@@ -70,7 +66,6 @@
 
 // console.log(username);
 
-
 // Professional way - HTML textbox
 
 // let username;
@@ -78,11 +73,10 @@
 // document.getElementById("mySubmit").onclick = function() {
 //     username = document.getElementById("myText").value;
 //     document.getElementById("myH1").textContent = `Hello ${username}`;
-//     console.log(typeof username); 
+//     console.log(typeof username);
 // }
 
 // type covserion - change the data type of a value to another (strings, number, boolean)
-
 
 // let age = window.prompt("How old arw you?");
 // console.log(typeof age);
@@ -141,12 +135,10 @@
 
 // console.log(circumference);
 
-
 // Math - builtin object that provides a collection of properties and methods
 
 // console.log(Math.PI);
 // console.log(Math.E);
-
 
 // let x = 16;
 // let y = 2;
@@ -173,7 +165,6 @@
 // z = Math.sqrt(x);
 // console.log(z);
 
-
 // let max = Math.max(x, y, z);
 // console.log(max);
 
@@ -189,9 +180,8 @@
 // if(age >= 18) {
 //     console.log("You are old enough to enter this site");
 // } else {
-//     console.log("You must 18+ to enter this site"); 
+//     console.log("You must 18+ to enter this site");
 // }
-
 
 // const myText = document.getElementById("myText");
 // const mySubmit = document.getElementById("mySubmit");
@@ -229,7 +219,7 @@
 //     console.log("You must 18+ to enter this site");
 // }
 
-// checked property 
+// checked property
 
 // const myCheckbox = document.getElementById("myCheckbox");
 // const visaBtn = document.getElementById("visaBtn");
@@ -238,8 +228,6 @@
 // const mySubmit = document.getElementById("mySubmit");
 // const subResult = document.getElementById("subResult");
 // const paymentResult = document.getElementById("paymentResult");
-
-
 
 // mySubmit.onclick = function() {
 //     if(myCheckbox.checked) {
@@ -260,7 +248,6 @@
 //     }
 // }
 
-
 // ternary operator = a shortcut to if{} statements helps to assign a variable based on a condition
 
 // condition ? codeIfTrue : codeIfFalse;
@@ -276,7 +263,6 @@
 // let greeting = time < 12 ? "Good morning" : "Good night";
 
 // console.log(greeting);
-
 
 // let time = 1;
 
@@ -296,7 +282,7 @@
 
 // console.log(`Your Total is ${purchaseAmount - purchaseAmount * (discount/100)}`);
 
-// switch statement - a control flow statement that allows a program to choose between multiple blocks of code based on different conditions  or can be efficeient replacement to many else if statements 
+// switch statement - a control flow statement that allows a program to choose between multiple blocks of code based on different conditions  or can be efficeient replacement to many else if statements
 
 // let day = "Sayfuykfturday";
 
@@ -326,7 +312,6 @@
 //         console.log("Invalid day");
 // }
 
-
 // string methods :- allow us to manipultate and work with text (strings)
 
 // let userName = "ShankarStudent";
@@ -353,7 +338,7 @@
 // } else {
 //     console.log("Username does not start with a space");
 //     console.log(userName);
-    
+
 // }
 // let result2 = userName.endsWith(" ");
 
@@ -364,7 +349,7 @@
 // } else {
 //     console.log("Username does not ends with a space");
 //     console.log(userName);
-    
+
 // }
 
 // let result3 = userName.includes(" ");
@@ -376,7 +361,6 @@
 // } else {
 //     console.log(userName);
 // // }
-
 
 // let phoneNumber = "123-456-7890";
 
@@ -392,7 +376,7 @@
 
 // console.log(phoneNumber);
 
-// string slicing = creating a substring from a protion of another string 
+// string slicing = creating a substring from a protion of another string
 
 // string.slice(start, end)
 
@@ -403,7 +387,6 @@
 
 // let lastName = fullName.slice(fullName.indexOf(" ") + 1);
 // console.log(lastName);
-
 
 // slice - create a substring from a portion of another string
 
@@ -427,12 +410,11 @@
 
 // console.log(extension);
 
-
 // method chaining - calling one method after another - in one continous line of code
 
 // no method chaining
 
-// let username = window.prompt("Enter your username"); 
+// let username = window.prompt("Enter your username");
 
 // username = username.trim();
 
@@ -447,28 +429,260 @@
 
 // console.log(username);
 
+// method chaining
 
-// method chaining 
+// let username = window.prompt("Enter your username");
 
-let username = window.prompt("Enter your username"); 
+// username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 
-username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+// console.log(username);
 
-console.log(username);
+// Logical Operators - Used t combine or manipulate boolean values (True or False)
+
+// AND =   &&
+// OR =    ||
+// NOT =   !
+
+// const temp = 25;
+
+// if(temp > 0 && temp <= 30) {
+//     console.log("The wheather is good");
+// } else {
+//     console.log("The weather is bad");
+// }
+
+// const temp = 10;
+
+// if(temp <= 0 || temp > 30) {
+//     console.log("The wheather is BAD");
+// } else {
+//     console.log("The weather is Good");
+// }
+
+// const isSunny = false;
+
+// if(!isSunny) {
+//     console.log("it is cloudy");
+// } else {
+//     console.log("it is sunny");
+// }
+
+// Strict Equality
+
+// = assignment operator
+// == comparison operator (compare if values are equal)
+// === strict equality operator (compare if values & datatype are equal)
+// != inequality operator - return the true if twi values are not equal
+// !== strict inequality operator
+
+// const PI = 3.14;
+
+// if(PI == "3.14") {
+//     console.log("That is PI");
+// } else {
+//     console.log("That is not PI");
+// }
+
+// const PI = 3.14;
+
+// if(PI != "3.14") {
+//     console.log("That is NOT PI");
+// } else {
+//     console.log("That is PI");
+// }
+
+// const PI = 3.14;
+
+// if(PI !== "3.14") {
+//     console.log("That is NOT PI");
+// } else {
+//     console.log("That is PI");
+// }
+
+// Control statements or looping statements
+
+// while loop - reapeat some code While some condition is true
+
+// For loop - repeat some code a LIMITED amount of times
+
+// for(let i = 0; i <= 3; i++) {
+//     console.log(i);
+// }
+
+// functions - a section of resuable code
+// declare code once, use it whenever we want, call the functions to execute that code.
+
+// function add(x, y) {
+//    let result = x + y;
+//    return result;
+// }
+// function add(x, y) {
+//    return x + y;
+// }
+// //              5
+// let answer = add(2, 3);
+
+// console.log(answer);
+// console.log(add(2, 3));
+
+// function isEven(number) {
+//     if(number % 2 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// function isEven(number) {
+//     return number % 2 === 0 ? true : false;
+// }
+// console.log(isEven(10));
+
+// function isValidEmail(email) {
+//    if(email.includes("@")) {
+//     return true;
+//    } else {
+//      return false;
+//    }
+
+//    return email.includes("@") ? true : false;
+// }
+
+// console.log(isValidEmail("shankar@gmail.com"));
+
+// Variable Scope - where a varaiable is recognized and accessible (local vs global)
+
+// let x = 3;
+
+// function func1() {
+//     console.log(x);
+// }
+
+// function func2() {
+//     console.log(x);
+// }
+
+// func2();
+
+// Arrays - a varaible like structure that can hold more tha 1 value.
+
+// let fruits = ["apple", "orange", "banana", "mango"];
+
+// for (let i = fruits.length-1; i >= 0; i--) {
+//   console.log(fruits[i]);
+// }
+
+// fruits.sort();
+// fruits.sort().reverse();
+
+// for (let fruit of fruits) {
+//   console.log(fruit);
+// }
+
+// 0 to n-1, n = 3
+// where is n is length of the array
+// index = 0 to 2
+
+// fruits[3] = "kiwi";
+//fruits.push("kiwi"); // it will add new element in the last
+// fruits.pop(); // remove the last element
+// fruits.unshift("mango");
+// fruits.shift();
+
+// console.log(fruits);
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+
+// let numOfFruits = fruits.length;
+// let index = fruits.indexOf("mango");
+// console.log(numOfFruits);
+// console.log(index);
 
 
+// spread operator = ... allows an iterable such as an array or string to be expanded into seperate elements. (unpacks the elements)
 
 
+// let numbers = [1, 2, 3, 4, 5, 6];
+
+// let maximum = Math.max(...numbers);
+// let minimum = Math.min(...numbers);
+
+// console.log(maximum);
+// console.log(minimum);
+// console.log(numbers);
+
+// let username = "Shankar Student";
+// let letters = [...username].join("-");
+// console.log(letters);
+
+// let fruits = ["apple", "orange", "banana"];
+// let veggies = ["carrots", "onion", "potato"];
+
+// let newFruits = [...fruits];
+// fruits.push("mango");
+// let foods = [...fruits, ...veggies];
+// let foods = [...fruits, ...veggies, "milk", "eggs"];
+
+// console.log(fruits);
+// console.log(foods);
+// console.log(newFruits);
 
 
+// rest parameters = (...rest) allow a function work with a variables number of aruguments by bundling them into array
+
+// spread - expand an array into seperate elements
+// rest - bundle seprate elements into an array
 
 
+// function openFridge(...foods) {
+//     console.log(...foods);  
+// }
+
+// function getFood(...foods) {
+//    return foods;
+// }
+
+// const food1 = "dosa";
+// const food2 = "idly";
+// const food3 = "pongal";
+// const food4 = "puri";
+// const food5 = "idiyappam";
+
+//openFridge(food1, food2, food3, food4, food5); // ["dosa", "idly", "pongal", "puri"]
+
+// const foods = getFood(food1, food2, food3, food4, food5);
+// console.log(foods);
 
 
+// function sum(...numbers) {
+
+//     let result = 0;
+//     for (let number of numbers) {
+//         result += number;
+//     }
+
+//     return result;
+// }
+// function getAverage(...numbers) {
+
+//     let result = 0;
+//     for (let number of numbers) {
+//         result += number;
+//     }
+
+//     return result / numbers.length;
+// }
+
+// // const total = sum(1, 2, 3, 4);
+// const total = getAverage(75, 100, 85, 50, 90);
+
+// console.log(`Our total is ${total}`); 
 
 
+// function combineStrings(...strings) {
+//     return strings.join(" ");
+// }
 
+// const fullName = combineStrings("Mr.","Shankar","Student");
 
-
-
-
+// console.log(fullName);
