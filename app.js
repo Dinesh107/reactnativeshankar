@@ -686,3 +686,286 @@
 // const fullName = combineStrings("Mr.","Shankar","Student");
 
 // console.log(fullName);
+
+
+// Callbacks - a function that is passsed as an argument to another function
+
+
+// reading the file
+// network requests
+// interacting with db
+
+// hello(goodbye);
+//hello(leave);
+// hello(wait);
+
+// function hello() {
+//     setTimeout(function() {
+//         console.log("Hello");
+//     }, 3000);
+// }
+
+// function hello(callback) {
+//     console.log("Hello");
+//     callback();
+// }
+
+// function leave() {
+//     console.log("Leaving");
+// }
+
+// function wait() {
+//     console.log("waiting");
+// }
+ 
+
+// function goodbye() {
+//     console.log("Good Bye");
+// }
+
+
+//    6
+// sum((event) => {
+//             //                                     6
+//     document.getElementById("myH1").textContent = event;
+// }, 2, 4);
+
+
+
+// function sum(callback, x, y) {
+//     let result = x + y;
+//     //        6
+//     callback(result)
+// }
+
+
+// add((param)=>{
+//     document.getElementById("myH1").textContent = param;
+// }, 2, 4)
+
+// function add(workDone, x, y) {
+//     result = x + y;
+//     workDone(result);
+// }
+
+// function displayConsole(result){
+//     console.log(result);
+// }
+
+// function displayDOM(result){
+//     document.getElementById("myH1").textContent = result;
+// }
+
+// add(displayDOM, 2, 5);
+
+// forEach - mathod used to iterate over the elements of an array and apply a specified functions (callback) to each element 
+
+// array.forEach(callback)
+
+
+// console.log("1");
+// setTimeout(() => {
+//     console.log("2");
+// }, 2000);
+
+// console.log("3");
+
+
+// const names = ["ganesh", "siva", "murugan"];
+// names.forEach((name) => console.log(name));
+
+
+
+// let fruits = ["APPLE", "ORANGE", "COCONUT"];
+// let fruits = ["orange", "apple", "coconut"];
+
+
+//fruits.forEach(upperCase);
+// fruits.forEach(lowerCase);
+// fruits.forEach(capitalise);
+
+// fruits.forEach(displayConsole);
+
+// function displayConsole(workDone) {
+//     console.log(workDone); 
+// }
+
+// function upperCase(element, index, array) {
+//     array[index] = element.toUpperCase();
+// }
+
+// function lowerCase(element, index, array) {
+//     array[index] = element.toLowerCase();
+// }
+
+// function capitalise(element, index, array) {
+//     array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+// //  fruit[0] = O + range
+// }
+
+// .map() = accepts a callback and applies that function to each element of an array, that return a new array
+
+// const numbers = [1 , 2, 3, 4, 5];
+
+// const squares = numbers.map(square);
+// const cubes = numbers.map(cube);
+
+// console.log(squares);
+// console.log(cubes);
+
+
+// function square(element) {
+//      return Math.pow(element, 2);
+// }
+
+// function cube(element) {
+//     return Math.pow(element, 3);
+// }
+
+// const students = ["Ganesh", "Siva", "Murugan"];
+
+// const studentsUpper = students.map(upperCase);
+
+// console.log(studentsUpper);
+
+// function upperCase(element) {
+//     return element.toUpperCase();
+// }
+
+//.filter() - Creates a new array by filtering out elements.
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+
+// let evenNumbers = numbers.filter(isEven);
+
+
+// console.log(evenNumbers);
+
+// function isEven(element) {
+//     return element % 2 === 0;
+// }
+
+// const ages = [16, 17, 18, 19, 50];
+
+// const adults = ages.filter(isAdult);
+
+// console.log(adults);
+
+// function isAdult(element) {
+//     return element >= 18;
+// }
+
+
+// const words = ["apple", "mango", "kiwi", "orange", "pomegrante"];
+
+// const shortWords = words.filter(getShortWords);
+
+// console.log(shortWords);
+
+// function getShortWords(element) {
+//     return element.length <= 6;
+// }
+
+// reduce() - reduce the elements of an array to single value
+
+// const cartPrices = [5, 30.433, 10, 25, 15, 20];
+
+// const cartTotal = cartPrices.reduce(sum);
+
+// console.log(`cart total is ${cartTotal.toFixed(2)}`);
+
+// function sum(accumulator, element) {
+//     return accumulator + element;
+// }
+// function sum(preElement, nextElement) {
+//     return preElement + nextElement;
+// }
+
+
+// const numGrades = [75, 50, 90, 80, 95, 66];
+
+// const maximum = numGrades.reduce(getMax);
+
+// console.log(maximum);
+
+// function getMax(acc, ele) {
+//     return Math.max(acc, ele)
+// }
+
+
+
+// function declaration - define a reusable block of code that performs a specific task
+
+// function hello() {
+//     console.log("hai, i am hello function");
+// }
+
+// function expression - way to define functions as values or variables
+
+// const hello = function() {
+//     console.log("hai, i am hello function");
+    
+// }
+
+// setTimeout(function(){
+//     console.log("hello");
+// }, 3000);
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// const squares = numbers.map(function (element) {
+//     return Math.pow(element, 2);
+// });
+
+// console.log(squares);
+
+
+// const evenNumbers = numbers.filter(function(element) {
+//     return element % 2 === 0;
+// })
+
+// console.log(evenNumbers);
+
+// const total = numbers.reduce(function (sum, element) {
+//   return sum + element;
+// });
+
+// console.log(total);
+
+// function square(element) {
+//     return Math.pow(element, 2);
+// }
+
+// arrow functions- a concise way to write fuinction expressions, good for way for simple function that we use once 
+
+// (parameter) = > some code
+
+// function hello() {
+//     console.log("hai, i am hello function");
+// }
+
+// hello();
+
+// const hello = function() {
+//     console.log("hai, i am hello function");
+// }
+
+
+// const hello = (name, age) => { console.log(`hello ${name}`)
+//                           console.log(`You are ${age} old`)}
+
+// hello("Shankar", 20);
+
+// setTimeout(hello, 3000);
+
+// function hello() {
+//     console.log("Hello");
+// }
+
+// setTimeout(function () {
+//     console.log("Hello");
+// }, 3000);
+
+setTimeout(() => console.log("hello"), 3000);
+
