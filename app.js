@@ -967,5 +967,144 @@
 //     console.log("Hello");
 // }, 3000);
 
-setTimeout(() => console.log("hello"), 3000);
+// setTimeout(() => console.log("hello"), 3000);
 
+// Javascripts Objects - collection of related properties and/or methods can represnt real world objects (people, products, places).
+
+// object = { key : value, functions() }
+
+// const person1 = {
+//     firstName: "Shankar",
+//     lastName: "Student",
+//     age: 20,
+//     isEmployed: true,
+//     greet() {
+//         console.log(`Hello, my name is ${this.firstName} and I am ${this.age} years old`);
+//     }
+// }
+
+// const person2 = {
+//     firstName: "Archana",
+//     lastName: "Student",
+//     age: 19,
+//     isEmployed: false,
+//     greet() {
+//         console.log(`Hello, my name is ${this.firstName} and I am ${this.age} years old`);
+//     }
+// }
+
+
+// console.log(person1.firstName + ' ' + person1.lastName  + ' ' + person1.age + ' ' + person1.isEmployed);
+
+// person1.greet();
+
+// console.log(person2.firstName +' '+ person2.lastName  +' '+ person2.age +' '+ person2.isEmployed);
+
+// person2.greet();
+
+
+// this - reference to the object where this is used.
+
+// (the object depends on the immediate context)
+
+// person.name = this.name
+
+// const person1 = {
+//     name: "Shankar",
+//     favFood: "Dosa",
+//     sayHello : function() {console.log(`Hi!! i am a ${this.favFood}`);
+//     },
+//     eat: function(){console.log(`${this.name} is eating ${this.favFood}`);
+//     }
+// }
+
+// const person2 = {
+//     name: "Archana",
+//     favFood: "Idly",
+//     sayHello : () => {console.log(`Hi!! i am a ${this.favFood}`);
+//     },
+//     eat: function(){console.log(`${this.name} is eating ${this.favFood}`);
+//     }
+// }
+
+// person1.eat();
+// person2.sayHello();
+// person2.eat();
+
+// console.log(this);
+
+// Constructor - special method for defining the properties and methods of objects.
+
+
+// function Car(make, model, year, color) {
+//     this.make = make;
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+
+//     this.drive = function() {console.log(`You drive the ${this.model}`);
+//     }
+// }
+
+// const car1 = new Car("Ford", "ecosport", 2020, "red");
+// const car2 = new Car("Tata", "nexon", 2022, "black");
+// const car3 = new Car("Maruthi", "swift", 2023, "blue");
+
+// console.log(car1.make);
+// console.log(car1.model);
+// console.log(car1.year);
+// console.log(car1.color);
+// car1.drive();
+
+// console.log(car2.make);
+// console.log(car2.model);
+// console.log(car2.year);
+// console.log(car2.color);
+// car2.drive();
+
+// console.log(car3.make);
+// console.log(car3.model);
+// console.log(car3.year);
+// console.log(car3.color);
+// car3.drive();
+
+// Classes - ES6 feature prvides a more structured and cleaner way to work with objects coampared to traditional constructor functions 
+
+// eccapsulation, inheritance, static keywords 
+
+
+// class Product {
+//     constructor(name, price) {
+//         this.name = name;
+//         this.price = price;
+   
+//     }
+
+//    displayProduct() {
+//         console.log(`Product Name: ${this.name}`);
+//         console.log(`Price: ${this.price.toFixed(2)}`);
+//     }
+
+//    calculateTotal(salesTax) {
+//     return this.price + (this.price * salesTax);
+//    }
+
+// }
+
+// const salesTax = 0.18;
+
+// const product1 = new Product("Phone", 10000.789, 2);
+// const product2 = new Product("Laptop", 30000.3456, 1);
+// const product3 = new Product("Shoe", 1000, 1);
+
+// product1.displayProduct();
+// product2.displayProduct();
+// product3.displayProduct();
+
+// const total = product1.calculateTotal(salesTax);
+
+// console.log(`The total price with tax ${total.toFixed(2)}`);
+
+
+// cgst 
+// sgst
