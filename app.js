@@ -1108,3 +1108,225 @@
 
 // cgst 
 // sgst
+
+
+//Static = keyword that defines properties and methods that belong to a class itself rather than the objects created from that class (class owns anything, not the objects)
+
+
+// class MathUtil {
+//     static PI = 3.14159;
+//     static getDiameter(radius) {
+//        return radius * 2;
+//     }
+//     static getCircumference(radius) {
+//        return Math.PI * 2 * radius;
+//     }
+//     static getArea(radius) {
+//        return Math.PI * Math.pow(radius, 2);
+//     }
+// }
+
+
+
+// console.log(MathUtil.PI);
+
+// console.log(MathUtil.getDiameter(10));
+
+// console.log(MathUtil.getCircumference(10));
+
+// console.log(MathUtil.getArea(10));
+
+
+// class User {
+//     static userCount = 0;
+
+//     constructor(username) {
+//         this.username = username;
+//         User.userCount++;
+//     }
+
+//     sayHello() {
+//         console.log(`Helloe my username is  ${this.username}`);   
+//     }
+
+//     static getUserCount() {
+//         console.log(`There are ${this.userCount} users online`);
+        
+//     }
+// }
+
+// const user1 = new User("john");
+// const user2 = new User("jane");
+
+// user1.sayHello();
+// console.log(user1.username);
+// user2.sayHello();
+// console.log(user2.username);
+// console.log(User.userCount);
+// User.getUserCount();
+
+
+// inheritance = allows a new class to inherit properties
+// and methods from an exiting class (parent -> child)
+// help with code reusabibility
+
+
+// class Animal {
+//     alive = true;
+//     eat() {
+//         console.log(`This ${this.name} is eating`);
+//     }
+//     sleep() {
+//         console.log(`This ${this.name} is sleeping`);
+//     }
+// }
+
+// class Rabbit extends Animal {
+//     name = 'Rabbit';
+
+//     run() {
+//         console.log(`This ${this.name} is running`);
+//     }
+// }
+// class Fish extends Animal {
+//     name = 'Fish';
+//     swim() {
+//         console.log(`This ${this.name} is swimming`);
+//     }
+// }
+// class Eagle extends Animal {
+//     name = 'Eagle';
+//     fly() {
+//         console.log(`This ${this.name} is flying`);
+//     }
+// }
+
+// const rabbit = new Rabbit();
+
+// console.log(rabbit.name);
+// rabbit.eat();
+// rabbit.sleep();
+// console.log(rabbit.alive);
+// rabbit.run();
+
+// const fish = new Fish();
+// console.log(fish.name);
+// fish.eat();
+// fish.sleep();
+// console.log(fish.alive);
+// fish.swim();
+
+
+// const eagle = new Eagle();
+// console.log(eagle.name);
+// eagle.eat();
+// eagle.sleep();
+// console.log(eagle.alive);
+// eagle.fly();
+
+
+// Super Keyword - which is used in the class to call the constructor or access the properties and methods of parent (superclass)
+
+// super = parent
+
+
+// class Animal {
+
+//      constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//      }
+// }
+
+// class Rabbit extends Animal {
+ 
+   
+//     constructor(name, age, runSpeed) {
+//         super(name, age);
+//         this.runSpeed = runSpeed;
+//     }
+
+// }
+// class Fish extends Animal {
+
+//     constructor(name, age,swimSpeed) {
+//         super(name, age);
+//         this.swimSpeed = swimSpeed;
+//     }
+// }
+// class Eagle extends Animal {
+  
+//     constructor(name, age,flySpeed) {
+//         super(name,age);
+//         this.flySpeed = flySpeed;
+//     }
+// }
+
+// const rabbit = new Rabbit("Micky", 1, 25);
+// const fish = new Fish("nemo", 2, 12);
+// const eagle = new Eagle("exii", 3, 50);
+
+
+// console.log(rabbit.runSpeed);
+// console.log(fish.swimSpeed);
+// console.log(eagle.flySpeed);
+
+// Getters and Setters
+
+
+// class Rectangle {
+//     constructor(width, height) {
+//         this.width = width;
+//         this.height = height;
+//     }
+
+//     set width(newWidth) {
+//         if(newWidth > 0) {
+//             this._width = newWidth;
+//         } else {
+//             console.error("Width must be +ve number");            
+//         }
+//     }
+//     set height(newheight) {
+//         if(newheight > 0) {
+//             this._height = newheight;
+//         } else {
+//             console.error("height must be +ve number");            
+//         }
+//     }
+
+//     get width() {
+//         return this._width;
+//     }
+//     get height() {
+//         return this._height;
+//     }
+// }
+
+// const rectangle = new Rectangle(3, 4);
+
+// console.log(rectangle.width);
+// console.log(rectangle.height);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
