@@ -1308,25 +1308,154 @@
 // console.log(rectangle.width);
 // console.log(rectangle.height);
 
+// Destructuring - extract values from arrays and objects, then assign them to varaiables in a convenient way.
+// [] - to perform array destructuring
+// {} - to perform object destructuring
+
+
+// swap the values of two numbers 
+
+// let a = 10;
+// let b = 20;
+// [a , b] = [b , a];
+// console.log(a);
+// console.log(b);
+
+// swap the 2 elements in an array 
+
+// const colors = ["blue", "green", "yellow", "orange", "black"];
+
+// console.log(colors);
+
+// [colors[0], colors[4]] = [colors[4], colors[0]];
+
+// console.log(colors);
+
+// Assign array elements to variables
+
+// const colors = ["blue", "green", "yellow", "orange", "black"];
+
+// const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
+
+// console.log(firstColor);
+// console.log(secondColor);
+// console.log(thirdColor);
+// console.log(extraColors);
+
+
+//extract values from objects 
+
+
+// const person1 = {
+//     firstName:"Shankar",
+//     lastName:"Student",
+//     age:32,
+//     job: "Cook",
+// }
+
+// const person2 = {
+//     firstName:"Siva",
+//     lastName:"ganesh",
+//     age:28,
+// }
+
+
+// const  {firstName, lastName, age, job} = person2;
+
+// console.log(firstName);
+
+// console.log(lastName);
+
+// console.log(age);
+
+// console.log(job);
 
 
 
+// Destructing in function parameters
 
 
+// function displayPerson({firstName, lastName, age, job}) {
+//    console.log(`name: ${firstName} ${lastName}`);
+//    console.log(`age: ${age}`);
+//    console.log(`job: ${job}`);
+// }
+
+// const person1 = {
+//     firstName:"Shankar",
+//     lastName:"Student",
+//     age:32,
+//     job: "Cook",
+// }
+
+// const person2 = {
+//     firstName:"Siva",
+//     lastName:"ganesh",
+//     age:28,
+// }
+
+// displayPerson(person2);
 
 
+// nested objects = object inside other object
+
+// allows us to represent more complex data structures.
+// child object is enclosed by a parent object
 
 
+// Person(Adress{}, ContactInfo{})
+
+// const person = {
+//     name: "John Doe",
+//     age: 30,
+//     address: {
+//         street: "123 Main St",
+//         city: "New York",
+//         state: "NY"
+//     },
+//     contactInfo: {
+//         email: "johndoe@example.com",
+//         phone: "123-456-7890"
+//     }, 
+//     hobbies: ["reading books", "hearing songs", "fishing"]
+// }
 
 
+// console.log(person.name);
+// console.log(person.age);
+// console.log(person.hobbies[0]);
+
+// console.log(person.address.street);
 
 
+// class Person {
+//     constructor(name, age, ...address) {
+//        this.name = name;
+//        this.age = age;
+//        this.address = new Address(...address);
+//     }
+// }
+
+// class Address {
+//     constructor(street, city, state) {
+//         this.street = street;
+//         this.city = city;
+//         this.state = state;
+//     }
+// }
+
+// const person1 = new Person("John Doe", 30, "123 Main St", "New York", "NY");
+// const person2 = new Person("Ganesh", 20, "Kamaraj St", "Chennai", "tamilnadu");
 
 
+// console.log(person1.name);
 
+// console.log(person1.age);
 
+// console.log(person1.address.street);
 
+// console.log(person2.name);
 
+// console.log(person2.age);
 
-
-
+// console.log(person2.address.street);
