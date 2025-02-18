@@ -1459,3 +1459,73 @@
 // console.log(person2.age);
 
 // console.log(person2.address.street);
+
+// Array of objects
+
+// const fruits = [
+//     {name: "apple", color: "red", calories: 95}, 
+//     {name: "orange", color: "orange", calories: 45}, 
+//     {name: "banana", color: "yellow", calories: 105}, 
+//     {name: "coconut", color: "white", calories: 160}, 
+//     {name: "pineapple", color: "yellow", calories: 17}
+// ];
+
+
+// for each
+
+// fruits.forEach( fruit => console.log(fruit.name));
+
+// map
+
+// const fruitNames = fruits.map(fruit => fruit.name);
+
+// console.log(fruitNames);
+
+// const fruitColors = fruits.map(fruit => fruit.color);
+
+// console.log(fruitColors);
+
+// filter 
+
+// const yellowFruits = fruits.filter(fruit => fruit.color === 'yellow');
+
+// console.log(yellowFruits);
+
+// const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
+
+// console.log(lowCalFruits);
+
+
+// reduce 
+
+// const maxFruit = fruits.reduce((max, fruit) => fruit.calories > max.calories ? fruit : max)
+
+// console.log(maxFruit);
+
+// fruits.splice(1, 2);
+
+// console.log(fruits);
+
+
+//fruits.push({name:"grapes", color: "Purple", calories: 40});
+//fruits.pop();
+
+// console.log(fruits);
+// console.log(fruits[4].name);
+// console.log(fruits[4].calories);
+
+
+// sort - method used to sort elements of an array in place, sorts elements as atring in lexicographic order, not alphabetical order
+
+// lexicographic order = alaphet + numbers + symbols) as strings
+
+// let fruits = ["apple", "orange", "banana", "coconut", "pineapple"];
+
+// let numbers = [1, 10, 8, 9, 6, 7, 5, 4, 3, 2];
+
+// //fruits.sort();
+// numbers.sort();
+
+// console.log(numbers);
+
+
